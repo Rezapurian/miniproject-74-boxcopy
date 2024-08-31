@@ -1,0 +1,41 @@
+@font-face {
+    font-family: vazir;
+    src: url(/font/Vazir-Regular.woff) format("woff");
+}
+*{
+    font-family: vazir;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: #0177d1;
+  user-select: none;
+}
+.container {
+  width: 400px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+}
+.container :where(textarea, button) {
+  outline: 0;
+  border: 0;
+  width: 100%;
+  padding: 15px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 5px 0;
+}
+.container textarea {
+  border: 1px solid #999;
+}
+.container button {
+  background-color: #b3e5fc;
+  cursor: pointer;
+}
